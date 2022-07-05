@@ -43,3 +43,17 @@ mkdir foldername4 foldername5 foldername6;
 ls -la;
 mv foldername1/file_1.txt foldername1/file_2.txt foldername2
 ```
+# SCRIPT --Простой скрипт на ('+', '-', '*', '/')
+```sql
+@echo off
+
+rem [Shalaputov M]
+set /p a="variable 1:  "
+set /p b="arithmetic operator (+-/*):  "
+set /p c="variable 2:  "
+set /a result=%a%%b%%c%
+echo %result%
+md %result%
+rem [можно также создать каталог папкой nul>]
+pause
+```
